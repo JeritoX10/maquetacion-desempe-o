@@ -21,6 +21,13 @@ body {
   height: 44px;
 }
 
+.brand {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+
 .hero {
     text-align: center;
     padding: 4rem;
