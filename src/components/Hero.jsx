@@ -1,12 +1,17 @@
-function Hero() {
+function ProductCard({ icon, name, description, price }) {
   return (
-    <section className="hero">
-      <h2>ESTILO URBANO</h2>
-      <h1>REDEFINIDO</h1>
-      <p>Descubre nuestra colección exclusiva de ropa urbana minimalista</p>
-      <button>EXPLORAR COLECCIÓN</button>
-    </section>
+    <div className="product-card">
+      <div className="img-placeholder">{icon}</div>
+      <div className="product-details">
+        <h3>{name}</h3>
+        <p>{description}</p>
+      </div>
+      <div className="product-bottom">
+        <strong>€{price}</strong>
+        <button type="button">AÑADIR</button>
+      </div>
+    </div>
   )
 }
 
-export default Hero
+export default ProductCard

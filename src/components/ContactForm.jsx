@@ -1,24 +1,23 @@
-import { useState } from "react";
+import { useState } from 'react'
 
 function ContactForm() {
   const [form, setForm] = useState({
-    name: "",
-    lastName: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
+    name: '',
+    lastName: '',
+    email: '',
+    subject: '',
+    message: '',
+  })
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+    setForm({ ...form, [e.target.name]: e.target.value })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    localStorage.setItem("contactForm", JSON.stringify(form));
-    console.log(form);
-    alert("Mensaje guardado (demo)");
-  };
+    e.preventDefault()
+    localStorage.setItem('contactForm', JSON.stringify(form))
+    alert('Mensaje guardado (demo)')
+  }
 
   return (
     <form onSubmit={handleSubmit} className="form">
@@ -56,7 +55,7 @@ function ContactForm() {
 
       <button type="submit">ENVIAR MENSAJE</button>
     </form>
-  );
+  )
 }
 
-export default ContactForm;
+export default ContactForm
