@@ -3,21 +3,22 @@
 }
 
 body {
-    margin: 0;
-    font-family: Arial;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #0f172a;
+  background: #f2f2f4;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    background: #111;
-    color: #fff
+  background: linear-gradient(90deg, #111317, #1a1d21);
+  color: #fff;
 }
 
-.navbar a {
-    color: white;
-    margin-left: 1rem
+.navbar-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
 }
 
 .hero {
